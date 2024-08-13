@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<style type="text/css">
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #89cff0;
+    padding: 20px;
+    text-align:right;
+}
+
+header nav ul {
+    list-style:lower-roman;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background-color: #add8e6;
+    background-size: 100% 625px;
+    height: 86vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    color: #8c9293;
+}
+
+#hero h1,h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#hero img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.resume a {
+    font-family: 'Times New Roman', Times, serif;
+    display:inline-block;
+    background-color: #00b7eb;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#about{
+    height: 90vh;
+    background: linear-gradient(to right,whitesmoke,#add8e6);
+}
+
+#about h2{
+    font-family: 'Times New Roman', Times, serif;
+    border-top: 2px solid #00b7eb;
+    border-bottom: 2px solid #00b7eb;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #333;
+}
+
+#about p{
+    font-family:'Times New Roman', Times, serif;
+    padding: auto;
+    margin-top: 5%;
+    max-width: 50%;
+    font-size: 26px;
+   text-align: left;
+}
+
+.img{
+    float: right;
+    width: 50%;
+    margin-top: 125px;
+}
+
+#resume{
+    height: 98vh;
+    background: linear-gradient(to left,whitesmoke,#add8e6);
+}
+
+#resume h2{
+    font-family: 'Times New Roman', Times, serif;
+    border-top: 2px solid #00b7eb;
+    border-bottom: 2px solid #00b7eb;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #333;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+}
+
+#container div{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    height: 600px;
+    width: 450px;
+    margin: 1px;
+}
+
+#projects{
+    height: 98vh;
+    background: linear-gradient(to right,whitesmoke,#add8e6);
+}
+
+#projects h2{
+    font-family: 'Times New Roman', Times, serif;
+    border-top: 2px solid #00b7eb;
+    border-bottom: 2px solid #00b7eb;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #333;
+}
+
+.project-grid {
+    display: grid;
+    padding-left: 25px;
+    padding-right: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    height: 400px;
+}
+
+.project-card h3{
+    text-align: center;
+}
+
+.project-card p{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    white-space: 50px;
+    width: 350px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-card a {
+    font-family: 'Times New Roman', Times, serif;
+    display:inline-block;
+    background-color: #add8e6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#contact{
+    height: 75vh;
+    background: linear-gradient(to left,whitesmoke,#89cff0);
+}
+
+#contact p{
+    font-size: large;   
+}
+
+#about, #contact {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 50px;
+    text-align: center;
+}
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #89cff0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <a href="https://ibb.co/HXWNtcw"><img src="https://i.ibb.co/7bwgn3M/navin-image.jpg" alt="WhatsApp Image 2024 08 03 at 11 43 49 b7f7109f" border="0"></a>
+        <h1>HI, I AM NAVINDRAN</h1>
+        <h3>Software Engineer | Web Developer</h3>
+        <div class="resume">
+            <a href="https://pdflink.to/86ad71fc/" download>Download Resume</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="img">
+            <img src="https://www.stackspot.com/wp-content/uploads/2023/12/AI-Augmented-Developer-Experience_cover-1536x1024.jpg" width="600" height="500">
+        </div>
+        <h2>About Me</h2>
+        <p><br>I am a second-year student at Sri Krishna College of Technology, majoring in Artificial Intelligence and Machine Learning. With a robust background in programming languages such as Java, Python, C++, SQL, HTML, CSS, and JavaScript, I am enthusiastic about combining web development with AI technologies. My practical experience includes designing secure applications and developing advanced machine learning models, highlighting my capability to leverage technical skills in real-world applications. Driven by a passion for continuous learning and innovation, I actively seek new challenges and opportunities for growth. Whether through personal projects or collaborative efforts, I am committed to broadening my expertise and making meaningful contributions to the tech community
+        </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <div id="container">
+            <div class="col1">
+                <h4>EDUCATION</h4>
+                <p><b>2023 - Present</b><br>Sri Krishna College Of Technology<br>|<br><b>2021 - 2023</b><br>Sri Raghavendra Matric Hr Sec School
+                </p>
+            </div>
+            <div class="col2">
+                <h4>SKILLS</h4>
+                <p>Web Development<br>|<br>Artificial Intelligence<br>|<br>Time mangaement<br>|<br>Creativity<br>|<br>Communication<br>|<br>Leadership<br>|<br>Adaptability<br>|<br>Html,CSS</p>
+            </div>
+            <div class="col3">
+                <h4>LANGUAGES</h4>
+                <p>Tamil - Native<br>|<br>English - Advanced
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Real-time video surveillance and threat detection using AI</h3>
+                <p>I've developed a Machine Learning model that integrates data to predict demand forecasting and dynamically optimizes inventory levels by identifying and managing risks. This innovative solution enables businesses to make data-driven decisions, minimizing stockouts and waste while maximizing revenue.</p>
+               <a href="https://pdflink.to/776f4aff/" download>Download PDF</a>
+            </div>
+            <div class="project-card">
+                <h3>Time Series Forecasting for stock Prices</h3>
+            <p>
+                I developed a Machine Learning model that focuses on predicting future stock Prices
+                using historical data which is crucial for financial analysis and investment strategies.
+            </p>
+            <img src="https://i.im.ge/2024/08/04/fov1WG.WhatsApp-Image-2024-08-03-at-12-06-56-a806b3d4.md.jpeg" alt="WhatsApp Image 2024 08 03 at 12 06 56 a806b3d4" border="0"></a>
+    </section>
+    <section id="contact">
+        <h2><b>Get in Touch</b></h2>
+        <p>Contact me at <b>navindran220@gmail.com</b></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Navindran. All rights reserved</p>
+    </footer>
+</body>
+</html>
